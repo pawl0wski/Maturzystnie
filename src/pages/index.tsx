@@ -7,7 +7,6 @@ export default function Home() {
             <Head>
                 <title>Maturzystnie</title>
             </Head>
-            <h1>Maturzystnie</h1>
         </>
     );
 }
