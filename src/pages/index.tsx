@@ -14,6 +14,7 @@ export default function Home() {
                 <WelcomeBanner />
                 <InvisibleSeparator />
                 <FeaturesBanner />
+                <InvisibleSeparator />
             </main>
         </>
     );
