@@ -1,0 +1,22 @@
+@import "../variables/variables";
+
+@mixin light-text-muted {
+    color: transparentize($light-text-color, 0.3);
+}
+
+@mixin dark-text-muted {
+    color: transparentize($dark-text-color, 0.3);
+}
+
+@mixin responsive-width-container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+@mixin gradient-text {
+    background: linear-gradient(175deg, $primary-first-color 0%, $primary-second-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 0.2rem 0; // Fix for gadient texts
+}

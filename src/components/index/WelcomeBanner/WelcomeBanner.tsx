@@ -9,17 +9,19 @@ export default function WelcomeBanner() {
     return (
         <header className={styles.welcomeBanner}>
             <div className={styles.welcomeBannerContent}>
-                <h1>Przygotuj się na Maturzystnie.</h1>
-                <p className="light-text-muted">
-                    Oprogramowanie, które sprawi ci przyjemność oraz znacząco poprawi Twoje wyniki w nauce.
-                </p>
-                <div className={styles.welcomeBannerButtons}>
-                    <Button>Kliknij</Button>
-                    <Button type="outline">Oferta</Button>
+                <div className={styles.welcomeBannerText}>
+                    <h1>Przygotuj się na Maturzystnie.</h1>
+                    <p className="light-text-muted">
+                        Oprogramowanie, które sprawi ci przyjemność oraz znacząco poprawi Twoje wyniki w nauce.
+                    </p>
+                    <div className={styles.welcomeBannerButtons}>
+                        <Button>Kliknij</Button>
+                        <Button type="outline">Oferta</Button>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.welcomeBannerImage}>
-                <Image src={welcomeBannerImage} alt="Student with laptop" className={styles.welcomeBannerImage} />
+                <div className={styles.welcomeBannerImage}>
+                    <Image src={welcomeBannerImage} alt="Student with laptop" className={styles.welcomeBannerImage} />
+                </div>
             </div>
         </header>
     );

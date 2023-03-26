@@ -1,0 +1,27 @@
+@import "@/styles/variables/_variables.scss";
+@import "@/styles/mixins/_mixins.scss";
+
+.featuresBannerCard {
+    aspect-ratio: 1 / 1.5;
+    border-radius: 2rem;
+    height: 20rem;
+    box-shadow: 0 10px 50px $mixed-shadow-color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+    img {
+        height: auto;
+        width: 50%;
+    }
+
+    p {
+        @include gradient-text;
+        font-size: xx-large;
+        font-weight: bold;
+        margin: 0;
+    }
+}

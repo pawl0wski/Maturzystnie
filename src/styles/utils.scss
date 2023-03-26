@@ -1,9 +1,17 @@
-@import "variables/variables";
+@import "mixins/mixins";
 
 .light-text-muted {
-    color: transparentize($light-text-color, 0.3);
+    @include light-text-muted;
 }
 
 .dark-text-muted {
-    color: transparentize($dark-text-color, 0.3);
+    @include dark-text-muted;
+}
+
+.responsive-width-container {
+    @include responsive-width-container;
+}
+
+.gradient-text {
+    @include gradient-text;
 }

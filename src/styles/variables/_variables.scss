@@ -2,5 +2,7 @@ $primary-first-color: #fd6585;
 $primary-second-color: #0d25b9;
 $mixed-color: #df65f1;
 
+$mixed-shadow-color: transparentize($mixed-color, 0.6);
+
 $light-text-color: #ffffff;
 $dark-text-color: #000000;
