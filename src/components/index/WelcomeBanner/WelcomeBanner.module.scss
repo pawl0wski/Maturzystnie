@@ -1,0 +1,52 @@
+@import "@/styles/variables/_variables.scss";
+
+$welcomeBannerHeight: 35rem;
+
+.welcomeBanner {
+    background: linear-gradient(175deg, $primaryFirstColor 0%, $primarySecondColor 100%);
+    width: 100%;
+    height: $welcomeBannerHeight;
+    max-height: $welcomeBannerHeight;
+    padding: 0 4rem;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeBannerContent {
+    color: white;
+    width: 40rem;
+
+    h1 {
+        font-size: xxx-large;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: large;
+    }
+}
+
+.welcomeBannerButtons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.welcomeBannerImage {
+    img {
+        height: calc($welcomeBannerHeight * 1.2);
+        width: auto;
+
+        mix-blend-mode: overlay;
+        opacity: 0.8;
+
+        transform: translateY(15%);
+    }
+}

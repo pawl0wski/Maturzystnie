@@ -1,0 +1,26 @@
+@import "@/styles/variables/_variables.scss";
+
+.normalButton {
+    padding: 0.5rem 3rem;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: white;
+
+    font-size: large;
+    font-weight: bold;
+    color: $lightTextColor;
+
+    font-family: Montserrat, serif;
+    cursor: pointer;
+}
+
+.filledButton {
+    transition: all 0.2s;
+    background-color: $mixedColor;
+    border-color: $mixedColor;
+    &:hover {
+        background-color: darken($mixedColor, 10%);
+        border-color: darken($mixedColor, 10%);
+    }
+}
