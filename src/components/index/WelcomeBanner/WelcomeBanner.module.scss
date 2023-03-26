@@ -1,12 +1,12 @@
 @import "@/styles/variables/_variables.scss";
 
-$welcomeBannerHeight: 35rem;
+$welcome-banner-height: 35rem;
 
 .welcomeBanner {
-    background: linear-gradient(175deg, $primaryFirstColor 0%, $primarySecondColor 100%);
+    background: linear-gradient(175deg, $primary-first-color 0%, $primary-second-color 100%);
     width: 100%;
-    height: $welcomeBannerHeight;
-    max-height: $welcomeBannerHeight;
+    height: $welcome-banner-height;
+    max-height: $welcome-banner-height;
     padding: 0 4rem;
 
     overflow: hidden;
@@ -41,7 +41,7 @@ $welcomeBannerHeight: 35rem;
 
 .welcomeBannerImage {
     img {
-        height: calc($welcomeBannerHeight * 1.2);
+        height: calc($welcome-banner-height * 1.2);
         width: auto;
 
         mix-blend-mode: overlay;

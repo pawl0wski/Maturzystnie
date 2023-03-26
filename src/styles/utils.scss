@@ -1,9 +1,9 @@
 @import "variables/variables";
 
 .light-text-muted {
-    color: transparentize($lightTextColor, 0.3);
+    color: transparentize($light-text-color, 0.3);
 }
 
 .dark-text-muted {
-    color: transparentize($darkTextColor, 0.3);
+    color: transparentize($dark-text-color, 0.3);
 }
