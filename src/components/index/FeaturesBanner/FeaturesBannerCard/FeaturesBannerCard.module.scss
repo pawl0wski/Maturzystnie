@@ -1,0 +1,82 @@
+@import "@/styles/variables/_variables.scss";
+@import "@/styles/mixins/_mixins.scss";
+
+$bottom-offset: 20%;
+
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-10%);
+    }
+    66% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fly-bottom {
+    0% {
+        transform: translateY(calc(0% + $bottom-offset));
+    }
+    33% {
+        transform: translateY(calc(-5% + $bottom-offset));
+    }
+    66% {
+        transform: translateY(calc(5% + $bottom-offset));
+    }
+    100% {
+        transform: translateY(calc(0% + $bottom-offset));
+    }
+}
+
+.featuresBannerCard {
+    aspect-ratio: 1 / 1.5;
+    border-radius: 2rem;
+    height: 20rem;
+    box-shadow: 0 10px 50px $mixed-shadow-color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+    animation: 15s ease-in-out infinite alternate fly;
+
+    &__bottom {
+        animation: 15s ease-in-out infinite alternate fly-bottom;
+        transform: translateY(20%);
+    }
+
+    img {
+        height: auto;
+        width: 50%;
+    }
+
+    p {
+        @include gradient-text;
+        font-size: xx-large;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .featuresBannerCard {
+        &__bottom {
+            transform: none;
+            animation-delay: 2s;
+            animation-name: fly;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .featuresBannerCard {
+        animation: none;
+    }
+}

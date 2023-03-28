@@ -17,7 +17,7 @@ export default function FeaturesBanner() {
             </div>
             <div className={styles.featuresBannerCards}>
                 <FeaturesBannerCard name={"Quizy"} image={notepadImage} />
-                <FeaturesBannerCard name={"Testy"} image={rubyImage} />
+                <FeaturesBannerCard name={"Testy"} image={rubyImage} bottom={true} />
                 <FeaturesBannerCard name={"Filmy"} image={rocketImage} />
             </div>
         </div>
