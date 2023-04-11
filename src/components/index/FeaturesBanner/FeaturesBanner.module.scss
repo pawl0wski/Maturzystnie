@@ -27,10 +27,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-    div:nth-child(2) {
-        transform: translateY(20%);
-    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -56,11 +52,6 @@
         }
     }
 
-    .featuresBannerCards {
-        div:nth-child(2) {
-            transform: translateY(-20%);
-        }
-    }
 }
 
 @media screen and (max-width: 860px) {
@@ -69,10 +60,6 @@
         justify-content: center;
         align-items: center;
         gap: 3rem;
-
-        div:nth-child(2) {
-            transform: none;
-        }
 
         div {
             width: max(15rem, 50vw);
